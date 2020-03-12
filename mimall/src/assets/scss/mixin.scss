@@ -1,0 +1,27 @@
+@mixin flex($hov:space-between,$col:center){
+    display: flex;
+    justify-content: $hov;
+    align-items: $col;
+}
+
+@mixin bgImg($w:0,$h:0,$url:'',$bgsize:contain){
+    display: inline-block;
+    width: $w;
+    height: $h;
+    background: url($url) no-repeat;
+    background-size: $bgsize;
+}
+
+@mixin pos($pos:absolute,$left:0,$top:0,$w:100%,$h:100%){
+    position: $pos;
+    left: $left;
+    top: $top;
+    width: $w;
+    height: $h;
+}
+
+@mixin absPos($left:0,$top:0){
+    position: absolute;
+    left: $left;
+    top: $top;
+}
